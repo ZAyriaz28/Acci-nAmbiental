@@ -1,0 +1,293 @@
+/* Reseteo de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #b7f0bc;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, p {
+    margin-bottom: 0.5rem;
+}
+
+header {
+    background-color: #20b127;
+    padding: 1rem 1rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+nav {
+    margin-right: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1px 20px;
+    background-color: #1b5e20;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #77e97c;
+}
+
+/* Sección hero */
+#hero {
+    background-image: url("imagenes/fondoverde.avif");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#hero .hero-content {
+    z-index: 1;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-main {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    background-color: #ffa000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-main:hover {
+    background-color: #ffbe0b;
+}
+
+/* Sección de características */
+#features {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+    background-color: #1b5e20;
+}
+
+#features .feature {
+    margin: 0px 15px;
+    background-color: rgb(148, 233, 115);
+    opacity: 1.0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    color: black;
+}
+
+#features .feature:hover {
+    transform: translateY(-10px);
+}
+
+#features h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#features p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #20b127;
+    color: white;
+    padding: 10px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+}
+
+footer nav ul li {
+    margin-left: 20px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: #ffffff;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Flexbox para contenedor */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1 1 100%; /* Cada box ocupa el 100% del ancho en pantallas pequeñas */
+    margin: 5px;
+}
+
+/* Media Queries para diseño responsive */
+@media (max-width: 768px) {
+    /* Ajuste para el contenedor principal */
+    .container {
+        padding: 10px;
+    }
+
+    /* Botones */
+    button {
+        width: 100%; /* Hace que los botones ocupen todo el ancho del contenedor */
+        padding: 15px;
+        font-size: 1rem; /* Aumenta el tamaño de fuente si es necesario */
+    }
+
+    /* Videos */
+    iframe, video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Cajas (boxes) */
+    .box {
+        width: 100%; /* Asegura que las cajas ocupen todo el ancho del dispositivo */
+        margin-bottom: 20px; /* Espaciado entre cajas */
+    }
+
+    /* Texto y títulos */
+    h1, h2, h3, p {
+        font-size: 1.2rem; /* Ajusta el tamaño de fuente según tus necesidades */
+        line-height: 1.5;
+    }
+
+    #features {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #features .feature {
+        margin-bottom: 2rem;    
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Ajuste específico para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    button {
+        font-size: 0.9rem; /* Fuente ligeramente más pequeña en dispositivos muy pequeños */
+        padding: 12px;
+    }
+
+    .box {
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.1rem;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    #features .feature {
+        margin: 0 0 20px 0;
+        padding: 1.5rem;
+    }
+
+    nav ul li a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .btn-main {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

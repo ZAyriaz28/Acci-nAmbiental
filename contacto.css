@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1f2937;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #10b981;
+}
+
+nav {
+    margin-right: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Aumentar el espacio para el nav */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #150891;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #059669;
+}
+
+.content {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.contact-list {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.contact-list li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333ea1;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+button:hover {
+    background-color: #07235f;
+}
+
+footer {
+    background-color: #1f2937;
+    color: #ffffff;
+    text-align: center;
+    padding: 1px 5px;
+    width: 100%;
+}
+
+/* Media Query para pantallas más pequeñas (tabletas y móviles) */
+@media screen and (max-width: 768px) {
+    /* Ajustar el tamaño del logo */
+    .logo h1 {
+        font-size: 1.6rem;
+    }
+
+    /* Modificar el diseño de nav */
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px; /* Reduce el espacio de los elementos */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Reduce el espacio entre los elementos */
+    }
+
+    nav ul li a {
+        padding: 10px 15px; /* Ajustar el padding para pantallas pequeñas */
+        font-size: 1rem;
+    }
+
+    /* Ajustes de los títulos */
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Ajustes del contenido */
+    .content {
+        padding: 30px 10px;
+    }
+
+    /* Ajustar el tamaño de los formularios */
+    form {
+        padding: 10px;
+    }
+
+    /* Ajustes en los inputs y textarea */
+    input, textarea {
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+
+    /* Ajustar los márgenes y el texto de las listas */
+    .contact-list li {
+        font-size: 1rem;
+    }
+}
+
+/* Media Query para pantallas más pequeñas (móviles) */
+@media screen and (max-width: 480px) {
+    /* Ajuste final para dispositivos móviles */
+    .logo h1 {
+        font-size: 1.4rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Ajustes de la sección de contenido */
+    .content {
+        padding: 20px 5px;
+    }
+
+    input, textarea {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 12px;
+    }
+
+    .contact-list li {
+        font-size: 0.9rem;
+    }
+}

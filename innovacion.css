@@ -1,0 +1,206 @@
+/* Estilos generales */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e9f5e1;
+    color: #333;
+}
+
+header {
+    background-color: #258022;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-right: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+main {
+    padding: 20px;
+}
+
+.content {
+    background-color: rgb(207, 243, 160);
+    opacity: 3;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.media .img-responsive {
+    border-radius: 20px;
+    border: outset 5px black;
+}
+
+h2 {
+    color: #4CAF50;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+h3 {
+    color: #4CAF50;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+h4 {
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+ul {
+    margin-bottom: 20px;
+}
+
+.project-list li, .resources li {
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #258022;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Tamaño de fuente más pequeño */
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .logo h1 {
+        font-size: 24px; /* Logo más pequeño */
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        font-size: 18px; /* Tamaño de fuente más pequeño */
+    }
+
+    .content {
+        padding: 20px; /* Reducir padding */
+    }
+
+    h2 {
+        font-size: 24px; /* Reducir tamaño de fuente */
+    }
+
+    h3 {
+        font-size: 20px; /* Reducir tamaño de fuente */
+    }
+
+    h4 {
+        font-size: 18px; /* Reducir tamaño de fuente */
+    }
+
+    p {
+        font-size: 16px; /* Reducir tamaño de fuente */
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+/* Media Query para pantallas más pequeñas (por ejemplo, móviles) */
+@media screen and (max-width: 480px) {
+    .logo h1 {
+        font-size: 20px; /* Aún más pequeño en móviles */
+    }
+
+    nav a {
+        font-size: 16px; /* Aumentar legibilidad en móviles */
+    }
+
+    h2 {
+        font-size: 20px; /* Ajustar tamaño */
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px; /* Ajuste en párrafos */
+    }
+
+    .content {
+        padding: 15px; /* Menos padding en pantallas pequeñas */
+    }
+
+    footer {
+        padding: 8px;
+    }
+}
