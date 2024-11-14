@@ -10,9 +10,19 @@
     <style>
         body {
             background-image: url("fondo.jpeg");
-            background-size: cover; /* Para que la imagen cubra todo el fondo */
-            background-repeat: no-repeat; /* Para evitar que la imagen se repita */
-            background-position: center; /* Para centrar la imagen */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .notification {
+            display: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
         }
     </style>
     <header>
@@ -33,9 +43,7 @@
         <section class="content">
             <div class="media">
                 <img src="Río.jpg" alt="Voluntariado en acción">
-                <!-- Imagen adicional debajo de la primera -->
                 <img src="INTERTEX.Liderazgo-ambiental-2-2.jpg" alt="Limpieza comunitaria">
-                <!-- Otra imagen más abajo -->
                 <img src="educacion.jpeg" alt="Educación sobre residuos">
             </div>
             <div class="text-content">
@@ -62,6 +70,11 @@
 
                     <button type="submit">¡Yo participo!</button>
                 </form>
+
+                <!-- Notificación de participación -->
+                <div id="notification" class="notification">
+                    ¡Ya estás participando en el voluntariado! Gracias por unirte.
+                </div>
             </div>
 
             <div class="participantes">
@@ -81,7 +94,7 @@
             </div>
         </section>
     </main>
-
+    <script src="comunidad.js" defer></script>
     <footer>
         <p>© 2024 Acción Ambiental. Todos los derechos reservados.</p>
     </footer>
